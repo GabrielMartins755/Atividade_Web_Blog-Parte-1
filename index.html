@@ -8,19 +8,26 @@
 </head>
 
 <body>
-    <header>
-        <h1>Blog do Martins</h1>
-    </header>
-    <img src="eu.jpg" style="width: 250px; 
-    border: 2px solid rgb(0, 0, 0); float: left; margin-right: 30px">
-    <br>
+    <header> <h1>Blog do Martins</h1> </header>
+    
+    <div class=" body-flex"> 
+        <img src="eu.jpg" style="width: 250px; 
+        border: 2px solid rgb(9, 146, 194); float: left; margin-right: 30px">
+    </div>
 
     <footer>
-        <p>© 2026 Meu Site | Contato: email@site.com</p>
+        <p>© 2026 Meu Site </p>
     </footer>
 </body>
 
 <style>
+    .body-flex {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+    }
+
     body {
         margin: 0;
         min-height: 100vh;
@@ -29,14 +36,14 @@
     }
     
     header {
-        background-color: #020757;
+        background-color: #0B2D72;
         color: white;
         text-align: center;
         padding: 1px;
     }
     
     footer {
-        background-color: #020757;
+        background-color: #0B2D72;
         color: white;
         text-align: center;
         padding: 10px;
