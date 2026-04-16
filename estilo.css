@@ -1,12 +1,22 @@
+/* --- Estilos Gerais (Computador) --- */
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif; /* Definido aqui para todo o corpo */
+}
+
 header {
-    background-color: #020757;
+    background-color: #0B2D72;
     color: white;
     text-align: center;
-    padding: 1px;
+    padding: 20px; /* Aumentei um pouco para melhor toque */
 }
 
 footer {
-    background-color: #020757;
+    background-color: #0B2D72;
     color: white;
     text-align: center;
     padding: 10px;
@@ -15,10 +25,34 @@ footer {
 
 .conteudo-principal {
     padding: 20px;
-    line-height: 1.6;
-    font-family: Arial, sans-serif;
+    line-height: 0.5;
 }
 
 h2 {
     color: #020757;
+}
+
+/* Estilo da Imagem (Melhorado) */
+.foto-perfil {
+    width: 200px;
+    border: 6px solid rgb(0, 0, 0); 
+    border-radius: 50%;
+    float: left;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+/* --- AJUSTES PARA CELULAR (Media Query) --- */
+
+/* Quando o ecrã for menor que 600px de largura: */
+@media (max-width: 600px) {
+    .foto-perfil {
+        float: none;        /* Remove o alinhamento lateral */
+        display: block;     /* Permite centrar com margin auto */
+        margin: 0 auto 20px auto; /* Centra a imagem e dá espaço em baixo */
+    }
+
+    .conteudo-principal {
+        text-align: center; /* Centra o texto para combinar com a foto */
+    }
 }
